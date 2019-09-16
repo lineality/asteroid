@@ -1,0 +1,8 @@
+%R 2005PDSS...26D
+%H Davis, D.R.;Neese, C.
+%T Asteroid Albedos
+%D 01/2005
+%J NASA Planetary Data System, EAR-A-5-DDR-ALBEDOS-V1.1
+%U http://pdsquery.jpl.nasa.gov/query?Identifier=EAR-A-5-DDR-ALBEDOS-V1.1&resclass=data.dataset
+%B This data set comprises a compilation of asteroid albedos for the convenience of the user.  Most but not all of the albedos compiled here also appear in other PDS data sets.
+

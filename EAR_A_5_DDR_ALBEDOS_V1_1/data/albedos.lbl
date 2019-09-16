@@ -1,0 +1,253 @@
+PDS_VERSION_ID                     = PDS3                                     
+                                                                              
+RECORD_TYPE                        = "FIXED_LENGTH"                           
+RECORD_BYTES                       = 104                                      
+FILE_RECORDS                       = 2030                                     
+                                                                              
+^TABLE                             = "albedos.tab"                            
+                                                                              
+DATA_SET_ID                        = "EAR-A-5-DDR-ALBEDOS-V1.1"               
+PRODUCT_NAME                       = "COLLECTED ASTEROID ALBEDOS"             
+PRODUCT_ID                         = "ALBEDOS_TAB"                            
+INSTRUMENT_HOST_ID                 = "PUBLIT"                                 
+INSTRUMENT_HOST_NAME               = "PUBLISHED LITERATURE"                   
+INSTRUMENT_ID                      = "COMPIL"                                 
+INSTRUMENT_NAME                    = "COMPILATION"                            
+TARGET_NAME                        = "ASTEROID"                               
+TARGET_TYPE                        = "ASTEROID"                               
+START_TIME                         = 1973-01-01                               
+STOP_TIME                          = 2001-12-31                               
+PRODUCT_CREATION_TIME              = 2005-01-11  /* File uploaded to OLAF */  
+REFERENCE_KEY_ID                   = {"LUPISHKO&MOHAMED1996",                 
+        "MORRISON&ZELLNER1979"}                                               
+RECORD_FORMAT                      = "(I6, 1X, A17, 1X, A10, 1X, F5.3, 1X, I1,
+        2X, F6.4, 1X, F5.3, 1X, I1, 2X, F6.4, 1X, F6.4, 1X, F6.4, 2X, I2, 2X, 
+        F5.2, 1X, F5.2, 1X, I2)"                                              
+                                                                              
+OBJECT                             = TABLE                                    
+ ROWS                              = 2030                                     
+ ROW_BYTES                         = 104                                      
+ INTERCHANGE_FORMAT                = "ASCII"                                  
+ COLUMNS                           = 15                                       
+ DESCRIPTION                       = "This file comprises a compilation of    
+        asteroid albedos.  Sources include the radiometry albedos published in
+        'Asteroids' Morrison and Zellner (1979) [MORRISON&ZELLNER1979], the   
+        IMPS albedos archived in PDS data set IRAS-A-FPA-3-RDR-IMPS-V4.0,     
+        polarimetry albedos from PDS data set                                 
+        EAR-A-3-RDR-APD-POLARIMETRY-V4.0, and radar albedos from PDS data set 
+        EAR-A-5-DDR-RADAR-V8.0.                                               
+                                                                              
+        Albedos measured by different physical methods are not directly       
+        comparable and are collected together here for the convenience of data
+        users.                                                                
+        "                                                                     
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 1                                        
+  NAME                             = "AST_NUMBER"                             
+  DESCRIPTION                      = "Asteroid catalog number"                
+  DATA_TYPE                        = "ASCII_INTEGER"                          
+  START_BYTE                       = 1                                        
+  BYTES                            = 6                                        
+  FORMAT                           = "I6"                                     
+  MISSING_CONSTANT                 = -99999                                   
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 2                                        
+  NAME                             = "AST_NAME"                               
+  DESCRIPTION                      = "Asteroid name"                          
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 8                                        
+  BYTES                            = 17                                       
+  FORMAT                           = "A17"                                    
+  MISSING_CONSTANT                 = "---"                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 3                                        
+  NAME                             = "PROV_ID"                                
+  DESCRIPTION                      = "Asteroid provisional designation"       
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 26                                       
+  BYTES                            = 10                                       
+  FORMAT                           = "A10"                                    
+  MISSING_CONSTANT                 = "---"                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 4                                        
+  NAME                             = "TRIAD_ALBEDO"                           
+  DESCRIPTION                      = "Radiometric albedo taken from the TRIAD 
+        data compilation published in Morrison and Zellner (1979)             
+        [MORRISON&ZELLNER1979]."                                              
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 37                                       
+  BYTES                            = 5                                        
+  FORMAT                           = "F5.3"                                   
+  MISSING_CONSTANT                 = -.999                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 5                                        
+  NAME                             = "TRIAD_QUALITY_CODE"                     
+  DESCRIPTION                      = "Code for the quality of the radiometric 
+        data used to derive the TRIAD albedo.  The values for this code are   
+        given in Morrison and Zellner (1979) [MORRISON&ZELLNER1979] as        
+        follows:  'Quality code 1 means fragmentary data, e.g. a single       
+        observation or a result predating the high quality surveys of recent  
+        years. Quality 2 applies to reliable, confirmed observations, and     
+        quality 3 is used for results that could hardly be improved.'  The    
+        quality code is given as 9 if no radiometric albedo is tabulated."    
+  DATA_TYPE                        = "ASCII_INTEGER"                          
+  START_BYTE                       = 43                                       
+  BYTES                            = 1                                        
+  FORMAT                           = "I1"                                     
+  MISSING_CONSTANT                 = 9                                        
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 6                                        
+  NAME                             = "IMPS_ALBEDO"                            
+  DESCRIPTION                      = "The average of geometric albedos derived
+        from assumed values of H and G and each IRAS observation (scaled to   
+        zero phase), as presented in the IRAS Minor Planet Survey"            
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 46                                       
+  BYTES                            = 6                                        
+  FORMAT                           = "F6.4"                                   
+  MISSING_CONSTANT                 = -.9999                                   
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 7                                        
+  NAME                             = "IMPS_UNCERTAINTY"                       
+  DESCRIPTION                      = "One-sigma uncertainty of IMPS_ALBEDO"   
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 53                                       
+  BYTES                            = 5                                        
+  FORMAT                           = "F5.3"                                   
+  MISSING_CONSTANT                 = -.999                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 8                                        
+  NAME                             = "IMPS_QUALITY_CODE"                      
+  DESCRIPTION                      = "Quality code 1 means the albedo data    
+        were taken from the IMPS derived diameters and albedos file archived  
+        in the PDS data set IRAS-A-FPA-3-RDR-IMPS-V4.0.  This file includes   
+        IMPS results for asteroids with at least two valid band observations. 
+        Quality code 2 means the albedo data were taken from the IMPS         
+        singleton file of the same PDS data set, including asteroids for which
+        there is an accepted sighting, but in one band only.  The quality code
+        is given as zero if no IMPS albedo is tabulated."                     
+  DATA_TYPE                        = "ASCII_INTEGER"                          
+  START_BYTE                       = 59                                       
+  BYTES                            = 1                                        
+  FORMAT                           = "I1"                                     
+  MISSING_CONSTANT                 = 0                                        
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 9                                        
+  NAME                             = "POL_PMIN_ALBEDO"                        
+  DESCRIPTION                      = "Polarimetry Pmin albedo.  That is,      
+        albedo as determined from the empirical formula: log pv(Pmin) = -1.22 
+        log Pmin - 0.92 where Pmin is the minimum value of the polarization.  
+        See PDS data set EAR-A-3-RDR-APD-POLARIMETRY-V4.0 for information on  
+        the basic data."                                                      
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 62                                       
+  BYTES                            = 6                                        
+  FORMAT                           = "F6.4"                                   
+  MISSING_CONSTANT                 = -.9999                                   
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 10                                       
+  NAME                             = "POL_H_ALBEDO"                           
+  DESCRIPTION                      = "Polarimetry H albedo - albedo as        
+        determined from the empirical formula: log pv(h) = -0.98 log h - 1.73 
+        where h is the slope of the ascending branch of the polarization curve
+        measured at the inversion angle (tabulated in this table). See PDS    
+        data set EAR-A-3-RDR-APD-POLARIMETRY-V4.0 for information on the basic
+        data."                                                                
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 69                                       
+  BYTES                            = 6                                        
+  FORMAT                           = "F6.4"                                   
+  MISSING_CONSTANT                 = -.9999                                   
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 11                                       
+  NAME                             = "POLARIZATION_ALBEDO"                    
+  DESCRIPTION                      = "Albedo as determined by a weighted      
+        average of pv(Pmin) and pv(h) (tabulated in the previous two columns).
+        The albedos determined from Pmin and h were given weights of 1 and 2  
+        respectively in determining this value."                              
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 76                                       
+  BYTES                            = 6                                        
+  FORMAT                           = "F6.4"                                   
+  MISSING_CONSTANT                 = -.9999                                   
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 12                                       
+  NAME                             = "POL_QUALITY_CODE"                       
+  DESCRIPTION                      = "A single-digit albedo quality code for  
+        the POL_PMIN_ALBEDO, POL_H_ALBEDO, and POLARIZATION_ALBEDO fields. The
+        quality code was described in Lupishko and Mohamed (1996)             
+        [LUPISHKO&MOHAMED1996] as follows:  'Quality code 1 means fragmentary 
+        data, 2 applies to reliable, confirmed observations, and 3 is used for
+        results that could hardly be improved.'  The quality code is listed as
+        -9  if no polarization albedo is tabulated."                          
+  DATA_TYPE                        = "ASCII_INTEGER"                          
+  START_BYTE                       = 84                                       
+  BYTES                            = 2                                        
+  FORMAT                           = "I2"                                     
+  MISSING_CONSTANT                 = -9                                       
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 13                                       
+  NAME                             = "RADAR_ALBEDO"                           
+  DESCRIPTION                      = "Radar albedo taken from the PDS data set
+        EAR-A-5-DDR-RADAR-V8.0.  For asteroids with multiple albedo values the
+        mean value is quoted."                                                
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 88                                       
+  BYTES                            = 5                                        
+  FORMAT                           = "F5.2"                                   
+  MISSING_CONSTANT                 = -9.99                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 14                                       
+  NAME                             = "RADAR_UNCERTAINTY"                      
+  DESCRIPTION                      = "One-sigma uncertainty in the radar      
+        albedo, taken from PDS data set EAR-A-5-DDR-RADAR-V8.0.  For asteroids
+        with multiple albedo values the root mean square of the uncertainties 
+        is quoted."                                                           
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 94                                       
+  BYTES                            = 5                                        
+  FORMAT                           = "F5.2"                                   
+  MISSING_CONSTANT                 = -9.99                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 15                                       
+  NAME                             = "RADAR_NUM_OBS"                          
+  DESCRIPTION                      = "Number of radar observations averaged in
+        the radar albedo"                                                     
+  DATA_TYPE                        = "ASCII_INTEGER"                          
+  START_BYTE                       = 100                                      
+  BYTES                            = 2                                        
+  FORMAT                           = "I2"                                     
+  MISSING_CONSTANT                 = -9                                       
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+END_OBJECT                         = TABLE                                    
+END                                                                           
