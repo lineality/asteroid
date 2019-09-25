@@ -1,0 +1,65 @@
+PDS_VERSION_ID                     = PDS3                                     
+                                                                              
+RECORD_TYPE                        = "FIXED_LENGTH"                           
+RECORD_BYTES                       = 80                                       
+FILE_RECORDS                       = 38                                       
+                                                                              
+^TABLE                             = "footnotes.tab"                          
+                                                                              
+DATA_SET_ID                        = "EAR-A-KECK1LWS/ETAL-5-DELBO-V1.0"       
+PRODUCT_NAME                       = "FOOTNOTES TO DIAMETERS AND ALBEDOS      
+        TABLE"                                                                
+PRODUCT_ID                         = "FOOTNOTES_TAB"                          
+INSTRUMENT_HOST_ID                 = {"KECK1", "OBS056T6", "OBS376T3"}        
+INSTRUMENT_HOST_NAME               = {"EUROPEAN SOUTHERN OBSERVATORY 3.6-M    
+        EQUATORIAL CASSEGRAIN/COUDE REFLECTOR", "MAUNA KEA OBSERVATORY 3.2-M  
+        NASA INFRARED CASSEGRAIN EQUAT. REFLECTOR (IRTF)", "W.M. KECK         
+        OBSERVATORY 10-M KECK I RITCHEY-CHRETIEN ALTAZIMUTH REFLECTOR"}       
+INSTRUMENT_ID                      = {"I0069", "I0070", "I0071", "KECK1LWS"}  
+INSTRUMENT_NAME                    = {"JPL MID-INFRARED LARGE-WELL IMAGER",   
+        "KECK I LONG WAVELENGTH SPECTROGRAPH (IR)", "MIRSI - MID-INFRARED     
+        SPECTROMETER AND IMAGER", "THERMAL INFRARED MULTI-MODE INSTRUMENT 2"} 
+TARGET_NAME                        = "ASTEROID"                               
+TARGET_TYPE                        = "ASTEROID"                               
+START_TIME                         = 2000-03-16                               
+STOP_TIME                          = 2003-06-02                               
+PRODUCT_CREATION_TIME              = 2006-09-15  /* File uploaded to OLAF */  
+REFERENCE_KEY_ID                   = {"DELBO2004", "DELBOETAL2003",           
+        "HARRISETAL2005", "HARRISETAL2006", "MUELLERETAL2003"}                
+                                                                              
+OBJECT                             = TABLE                                    
+ ROWS                              = 38                                       
+ ROW_BYTES                         = 80                                       
+ INTERCHANGE_FORMAT                = "ASCII"                                  
+ COLUMNS                           = 2                                        
+ DESCRIPTION                       = "Footnotes to the Diameters and Albedos  
+        file (diamalb.tab).  These footnotes are referred to by number in the 
+        final column of the file."                                            
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 1                                        
+  NAME                             = "FOOTNOTE_NUMBER"                        
+  DESCRIPTION                      = "The number of the footnote, referred to 
+        in the final column of the diameters and albedos file (diamalb.tab).  
+        A hyphen in this column indicates the footnote is a continuation from 
+        the previous line."                                                   
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 1                                        
+  BYTES                            = 2                                        
+  FORMAT                           = "A2"                                     
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 2                                        
+  NAME                             = "FOOTNOTE_TEXT"                          
+  DESCRIPTION                      = "The text of the footnote.  A hyphen in  
+        the FOOTNOTE_NUMBER column indicates that this text is a continuation 
+        of the previous line."                                                
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 4                                        
+  BYTES                            = 75                                       
+  FORMAT                           = "A75"                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+END_OBJECT                         = TABLE                                    
+END                                                                           

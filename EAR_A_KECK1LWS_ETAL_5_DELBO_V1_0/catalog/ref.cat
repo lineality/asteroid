@@ -1,0 +1,85 @@
+PDS_VERSION_ID                     = PDS3                                     
+RECORD_TYPE                        = "FIXED_LENGTH"                           
+                                                                              
+OBJECT                             = REFERENCE                                
+  REFERENCE_KEY_ID                 = "DELBO2004"                              
+  REFERENCE_DESC                   = "Delbo, M., The nature of near-earth     
+        asteroids from the study of their thermal infrared emission, Ph.D.    
+        thesis, Freie Universitat Berlin, 2004."                              
+END_OBJECT                         = REFERENCE                                
+                                                                              
+OBJECT                             = REFERENCE                                
+  REFERENCE_KEY_ID                 = "DELBOETAL2003"                          
+  REFERENCE_DESC                   = "Delbo, M., A.W. Harris, R.P. Binzel, P. 
+        Pravec, and J.K. Davies, Keck observations of near-earth asteroids in 
+        the thermal infrared, Icarus 166, 116-130, 2003."                     
+END_OBJECT                         = REFERENCE                                
+                                                                              
+OBJECT                             = REFERENCE                                
+  REFERENCE_KEY_ID                 = "DEUTCHETAL2002"                         
+  REFERENCE_DESC                   = "Deutch, L., J. Hora, J. Adams, and M.   
+        Kassis, MIRSI:  A mid-infrared spectrometer and imager, Astronomical  
+        Imaging and Instrumentation, SPIE 4841, 106, 2002."                   
+END_OBJECT                         = REFERENCE                                
+                                                                              
+OBJECT                             = REFERENCE                                
+  REFERENCE_KEY_ID                 = "HARRIS&LAGERROS2002"                    
+  REFERENCE_DESC                   = "Harris, A.W. and J.S.V. Lagerros,       
+        Asteroids in the thermal infrared, in 'Asteroids III', Bottke, W., A. 
+        Cellino, P. Paolicci, and R.P. Binzel, Eds., University of Arizona    
+        Press, Tucson, pp. 205-218, 2002."                                    
+END_OBJECT                         = REFERENCE                                
+                                                                              
+OBJECT                             = REFERENCE                                
+  REFERENCE_KEY_ID                 = "HARRIS1998"                             
+  REFERENCE_DESC                   = "Harris, A.W., A thermal model for       
+        near-Earth asteroids, Icarus 131, 291-301, 1998."                     
+END_OBJECT                         = REFERENCE                                
+                                                                              
+OBJECT                             = REFERENCE                                
+  REFERENCE_KEY_ID                 = "HARRISETAL2005"                         
+  REFERENCE_DESC                   = "Harris, A.W., M. Mueller, M. Delbo, and 
+        S.J. Bus, The surface properties of small asteroids:  Peculiar Betulia
+        - A case study, Icarus 179, 95-108, 2005."                            
+END_OBJECT                         = REFERENCE                                
+                                                                              
+OBJECT                             = REFERENCE                                
+  REFERENCE_KEY_ID                 = "HARRISETAL2006"                         
+  REFERENCE_DESC                   = "Harris, A.W., B.D. Warner, and P.       
+        Pravec, Eds., Asteroid Lightcurve Derived Data.                       
+        EAR-A-5-DDR-DERIVED-LIGHTCURVE-V8.0. NASA Planetary Data System,      
+        2006."                                                                
+END_OBJECT                         = REFERENCE                                
+                                                                              
+OBJECT                             = REFERENCE                                
+  REFERENCE_KEY_ID                 = "JONES&PUETTER1993"                      
+  REFERENCE_DESC                   = "Jones, B. and R.C. Puetter, 'Keck long  
+        wavelength spectrometer', Proceedings of the SPIE - The International 
+        Society for Optical Engineering, 1946, Pages 610-621, 1993."          
+END_OBJECT                         = REFERENCE                                
+                                                                              
+OBJECT                             = REFERENCE                                
+  REFERENCE_KEY_ID                 = "LEBOFSKY&SPENCER1989"                   
+  REFERENCE_DESC                   = "Lebofsky, L.A. and J.R. Spencer,        
+        Radiometry and thermal modeling of asteroids, In 'Asteroids II',      
+        Binzel, R.P., T. Gehrels, and M.S. Matthews, Eds., University of      
+        Arizona Press, Tucson, pp. 128-147, 1989."                            
+END_OBJECT                         = REFERENCE                                
+                                                                              
+OBJECT                             = REFERENCE                                
+  REFERENCE_KEY_ID                 = "MUELLERETAL2003"                        
+  REFERENCE_DESC                   = "Mueller, M., A.W. Harris, M. Delbo, and 
+        S.J. Bus, The sizes and albedos of near-earth asteroids, including    
+        6489 Golevka, from recent IRTF observations, American Astronomical    
+        Society, DPS meeting #35, #22.04, Bulletin of the American            
+        Astronomical Society, Vol. 35, p. 955, 2003."                         
+END_OBJECT                         = REFERENCE                                
+                                                                              
+OBJECT                             = REFERENCE                                
+  REFERENCE_KEY_ID                 = "REIMANNETAL2000"                        
+  REFERENCE_DESC                   = "Reimann, H.G., E. Dietzsch, J. Hron et  
+        al., TIMMI2:  A new multimode mid-infrared instrument for the ESO 3.6m
+        telescope, Proceedings of SPIE, Vol. 4008, p. 131, 2000."             
+END_OBJECT                         = REFERENCE                                
+                                                                              
+END                                                                           

@@ -1,0 +1,319 @@
+PDS_VERSION_ID                     = PDS3                                     
+                                                                              
+RECORD_TYPE                        = "FIXED_LENGTH"                           
+RECORD_BYTES                       = 147                                      
+FILE_RECORDS                       = 56                                       
+                                                                              
+^TABLE                             = "diamalb.tab"                            
+                                                                              
+DATA_SET_ID                        = "EAR-A-KECK1LWS/ETAL-5-DELBO-V1.0"       
+PRODUCT_NAME                       = "DIAMETERS AND ALBEDOS"                  
+PRODUCT_ID                         = "DIAMALB_TAB"                            
+INSTRUMENT_HOST_ID                 = {"KECK1", "OBS056T6", "OBS376T3"}        
+INSTRUMENT_HOST_NAME               = {"EUROPEAN SOUTHERN OBSERVATORY 3.6-M    
+        EQUATORIAL CASSEGRAIN/COUDE REFLECTOR", "MAUNA KEA OBSERVATORY 3.2-M  
+        NASA INFRARED CASSEGRAIN EQUAT. REFLECTOR (IRTF)", "W.M. KECK         
+        OBSERVATORY 10-M KECK I RITCHEY-CHRETIEN ALTAZIMUTH REFLECTOR"}       
+INSTRUMENT_ID                      = {"I0069", "I0070", "I0071", "KECK1LWS"}  
+INSTRUMENT_NAME                    = {"JPL MID-INFRARED LARGE-WELL IMAGER",   
+        "KECK I LONG WAVELENGTH SPECTROGRAPH (IR)", "MIRSI - MID-INFRARED     
+        SPECTROMETER AND IMAGER", "THERMAL INFRARED MULTI-MODE INSTRUMENT 2"} 
+TARGET_NAME                        = "ASTEROID"                               
+TARGET_TYPE                        = "ASTEROID"                               
+START_TIME                         = 2000-03-16                               
+STOP_TIME                          = 2003-06-03                               
+PRODUCT_CREATION_TIME              = 2006-09-27  /* File uploaded to OLAF */  
+REFERENCE_KEY_ID                   = "DELBO2004"                              
+                                                                              
+OBJECT                             = TABLE                                    
+ ROWS                              = 56                                       
+ ROW_BYTES                         = 147                                      
+ INTERCHANGE_FORMAT                = "ASCII"                                  
+ COLUMNS                           = 22                                       
+ DESCRIPTION                       = "Diameters and albedos from infrared     
+        thermal fluxes, derived using three models.  The three models used are
+        the Standard Thermal Model (STM), the Fast Rotating Model (FRM) and   
+        the Near Earth Asteroid Thermal Model (NEATM).  Details of the models 
+        and derivations are given in Delbo 2004 (M. Delbo, Ph.D. Thesis, Freie
+        Universitat Berlin, 2004)."                                           
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 1                                        
+  NAME                             = "AST_NUMBER"                             
+  DESCRIPTION                      = "Asteroid number"                        
+  DATA_TYPE                        = "ASCII_INTEGER"                          
+  START_BYTE                       = 1                                        
+  BYTES                            = 6                                        
+  FORMAT                           = "I6"                                     
+  MISSING_CONSTANT                 = 0                                        
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 2                                        
+  NAME                             = "AST_NAME"                               
+  DESCRIPTION                      = "Asteroid name"                          
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 8                                        
+  BYTES                            = 17                                       
+  FORMAT                           = "A17"                                    
+  MISSING_CONSTANT                 = "-"                                      
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 3                                        
+  NAME                             = "PROV_DESIG"                             
+  DESCRIPTION                      = "Asteroid provisional designation"       
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 26                                       
+  BYTES                            = 10                                       
+  FORMAT                           = "A10"                                    
+  MISSING_CONSTANT                 = "-"                                      
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 4                                        
+  NAME                             = "OBS_ID"                                 
+  DESCRIPTION                      = "Telescope at which the observations were
+        made:                                                                 
+          Keck - The Keck-1 telescope on Mauna Kea, using the Long Wavelength 
+        Spectrograph (LWS).                                                   
+          ESO - The 3.6m ESO telescope in La Silla, Chile, using the TIMMI2   
+        Thermal Infrared Multi-mode Instrument.                               
+          IRTF - The NASA Infrared Telescope Facilty on Mauna Kea, using the  
+        MIRSI Mid-Infrared Spectrometer for observations of asteroid 35386    
+        (1997 XF11), and using the MIRLIN Mid-Infrared Large-Well Imager for  
+        all other asteroids."                                                 
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 37                                       
+  BYTES                            = 4                                        
+  FORMAT                           = "A4"                                     
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 5                                        
+  NAME                             = "OBS_DATE"                               
+  DESCRIPTION                      = "UT Date of observation"                 
+  DATA_TYPE                        = "DATE"                                   
+  START_BYTE                       = 42                                       
+  BYTES                            = 10                                       
+  FORMAT                           = "A10"                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 6                                        
+  NAME                             = "PHASE_ANGLE"                            
+  DESCRIPTION                      = "Phase angle at which the asteroid was   
+        observed"                                                             
+  UNIT                             = "DEGREE"                                 
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 53                                       
+  BYTES                            = 5                                        
+  FORMAT                           = "F5.1"                                   
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 7                                        
+  NAME                             = "DIAM_STM"                               
+  DESCRIPTION                      = "Asteroid diameter as derived using the  
+        Standard Thermal Model (STM)"                                         
+  UNIT                             = "KILOMETER"                              
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 59                                       
+  BYTES                            = 4                                        
+  FORMAT                           = "F4.2"                                   
+  MISSING_CONSTANT                 = -.99                                     
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 8                                        
+  NAME                             = "DIAM_STM_UNC"                           
+  DESCRIPTION                      = "Uncertainty in DIAM_STM"                
+  UNIT                             = "KILOMETER"                              
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 64                                       
+  BYTES                            = 5                                        
+  FORMAT                           = "F5.3"                                   
+  MISSING_CONSTANT                 = -.999                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 9                                        
+  NAME                             = "DIAM_NEATM"                             
+  DESCRIPTION                      = "Asteroid diameter as derived using the  
+        Near Earth Asteroid Thermal Model (NEATM)"                            
+  UNIT                             = "KILOMETER"                              
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 70                                       
+  BYTES                            = 4                                        
+  FORMAT                           = "F4.2"                                   
+  MISSING_CONSTANT                 = -.99                                     
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 10                                       
+  NAME                             = "DIAM_NEATM_UNC"                         
+  DESCRIPTION                      = "Uncertainty in DIAM_NEATM"              
+  UNIT                             = "KILOMETER"                              
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 75                                       
+  BYTES                            = 5                                        
+  FORMAT                           = "F5.3"                                   
+  MISSING_CONSTANT                 = -.999                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 11                                       
+  NAME                             = "NEATM_BEAMING_FLAG"                     
+  DESCRIPTION                      = "Flag for the NEATM beaming parameter    
+        (eta):                                                                
+        d - derived                                                           
+        a - assumed (default)                                                 
+        The NEATM makes use of multi-wavelength thermal infrared data to solve
+        simultaneously for the beaming parameter (eta), size, and albedo.  In 
+        cases in which the data are of poor quality or observations were made 
+        over a small wavelength range, the NEATM fits and the resulting       
+        eta-values are not well constrained.  In these cases, default values  
+        of eta are used, as follows:  Default eta value of 1.0 is used for    
+        objects observed at a phase angle smaller than or equal to 45 degrees,
+        and default eta value of 1.5 is used for objects observed at larger   
+        phase angles."                                                        
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 81                                       
+  BYTES                            = 1                                        
+  FORMAT                           = "A1"                                     
+  MISSING_CONSTANT                 = "-"                                      
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 12                                       
+  NAME                             = "NEATM_BEAMING_PAR"                      
+  DESCRIPTION                      = "The beaming parameter (eta) used in the 
+        Near Earth Asteroid Thermal Model (NEATM) derivation of the asteroid  
+        diameter"                                                             
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 83                                       
+  BYTES                            = 4                                        
+  FORMAT                           = "F4.2"                                   
+  MISSING_CONSTANT                 = -.99                                     
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 13                                       
+  NAME                             = "NEATM_BEAMING_PAR_UNC"                  
+  DESCRIPTION                      = "Uncertainty in NEATM_BEAMING_PAR"       
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 88                                       
+  BYTES                            = 4                                        
+  FORMAT                           = "F4.2"                                   
+  MISSING_CONSTANT                 = -.99                                     
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 14                                       
+  NAME                             = "DIAM_FRM"                               
+  DESCRIPTION                      = "Asteroid diameter derived using the Fast
+        Rotating Model (FRM)"                                                 
+  UNIT                             = "KILOMETER"                              
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 93                                       
+  BYTES                            = 5                                        
+  FORMAT                           = "F5.2"                                   
+  MISSING_CONSTANT                 = -9.99                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 15                                       
+  NAME                             = "DIAM_FRM_UNC"                           
+  DESCRIPTION                      = "Uncertainty in DIAM_FRM"                
+  UNIT                             = "KILOMETER"                              
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 99                                       
+  BYTES                            = 5                                        
+  FORMAT                           = "F5.3"                                   
+  MISSING_CONSTANT                 = -.999                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 16                                       
+  NAME                             = "ALB_STM"                                
+  DESCRIPTION                      = "Asteroid albedo derived using the       
+        Standard Thermal Model (STM)"                                         
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 105                                      
+  BYTES                            = 5                                        
+  FORMAT                           = "F5.3"                                   
+  MISSING_CONSTANT                 = -.999                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 17                                       
+  NAME                             = "ALB_STM_UNC"                            
+  DESCRIPTION                      = "Uncertainty in ALB_STM"                 
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 111                                      
+  BYTES                            = 5                                        
+  FORMAT                           = "F5.3"                                   
+  MISSING_CONSTANT                 = -.999                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 18                                       
+  NAME                             = "ALB_NEATM"                              
+  DESCRIPTION                      = "Asteroid albedo derived using the Near  
+        Earth Asteroid Thermal Model (NEATM)"                                 
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 117                                      
+  BYTES                            = 5                                        
+  FORMAT                           = "F5.3"                                   
+  MISSING_CONSTANT                 = -.999                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 19                                       
+  NAME                             = "ALB_NEATM_UNC"                          
+  DESCRIPTION                      = "Uncertainty in ALB_NEATM"               
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 123                                      
+  BYTES                            = 5                                        
+  FORMAT                           = "F5.3"                                   
+  MISSING_CONSTANT                 = -.999                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 20                                       
+  NAME                             = "ALB_FRM"                                
+  DESCRIPTION                      = "Asteroid albedo derived using the Fast  
+        Rotating Model (FRM)"                                                 
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 129                                      
+  BYTES                            = 5                                        
+  FORMAT                           = "F5.3"                                   
+  MISSING_CONSTANT                 = -.999                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 21                                       
+  NAME                             = "ALB_FRM_UNC"                            
+  DESCRIPTION                      = "Uncertainty in ALB_FRM"                 
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 135                                      
+  BYTES                            = 5                                        
+  FORMAT                           = "F5.3"                                   
+  MISSING_CONSTANT                 = -.999                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 22                                       
+  NAME                             = "FOOTNOTE"                               
+  DESCRIPTION                      = "Footnote number referring to a note on  
+        the observations and/or the albedo and diameter derivations.  The     
+        footnotes may be found in the accompanying file footnote.tab."        
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 141                                      
+  BYTES                            = 5                                        
+  FORMAT                           = "A5"                                     
+  MISSING_CONSTANT                 = "-"                                      
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+END_OBJECT                         = TABLE                                    
+END                                                                           

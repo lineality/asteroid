@@ -1,0 +1,45 @@
+PDS_VERSION_ID                     = PDS3                                     
+RECORD_TYPE                        = "FIXED_LENGTH"                           
+LABEL_REVISION_NOTE                = "FEB 2002:  Barett McGavock (SBN)        
+        created.                                                              
+        JUN 2006:  David Tarico removed LUKAC&MILLER2000 reference"           
+                                                                              
+OBJECT                             = INSTRUMENT_HOST                          
+  INSTRUMENT_HOST_ID               = "OBS056T6"                               
+  OBJECT                           = INSTRUMENT_HOST_INFORMATION              
+    INSTRUMENT_HOST_NAME           = "EUROPEAN SOUTHERN OBSERVATORY 3.6-M     
+        EQUATORIAL CASSEGRAIN/COUDE REFLECTOR"                                
+    INSTRUMENT_HOST_TYPE           = "EARTH BASED"                            
+    INSTRUMENT_HOST_DESC           = "                                        
+                                                                              
+                                                                              
+  Instrument Host Overview                                                    
+  ========================                                                    
+    Operational 1976+                                                         
+                                                                              
+    GROUP                        = OBSERVATORY_PARAMETERS                     
+      OBSERVATORY_ID             = 'OBS056'                                   
+      NAME                       = 'EUROPEAN SOUTHERN OBSERVATORY'            
+      COUNTRY                    = 'CHILE'                                    
+      ADDRESS                    = 'CASILLA 19001-CORREO 19, SANTIAGO'        
+    END_GROUP                    = OBSERVATORY_PARAMETERS                     
+                                                                              
+    GROUP                        = TELESCOPE_PARAMETERS                       
+      TELESCOPE_ID               = 'T6'                                       
+      NAME                       = '3.6-M EQUATORIAL CASSEGRAIN/COUDE         
+    REFLECTOR'                                                                
+      APERTURE                   = 3.6 <METERS>                               
+      LONGITUDE                  =  -69.273331 /* -69 16 23.99 */             
+      LATITUDE                   =  -28.740000 /* -28 44 24.0 */              
+      ALTITUDE                   = 2428 <METERS>                              
+      COORDINATE_SOURCE          = 'Astronomical'                             
+    END_GROUP                    = TELESCOPE_PARAMETERS"                      
+                                                                              
+  END_OBJECT                       = INSTRUMENT_HOST_INFORMATION              
+                                                                              
+  OBJECT                           = INSTRUMENT_HOST_REFERENCE_INFO           
+    REFERENCE_KEY_ID               = "N/A"                                    
+  END_OBJECT                       = INSTRUMENT_HOST_REFERENCE_INFO           
+                                                                              
+END_OBJECT                         = INSTRUMENT_HOST                          
+END                                                                           

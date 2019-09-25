@@ -1,0 +1,175 @@
+PDS_VERSION_ID                     = PDS3                                     
+                                                                              
+RECORD_TYPE                        = "FIXED_LENGTH"                           
+RECORD_BYTES                       = 82                                       
+FILE_RECORDS                       = 317                                      
+                                                                              
+^TABLE                             = "fluxes.tab"                             
+                                                                              
+DATA_SET_ID                        = "EAR-A-KECK1LWS/ETAL-5-DELBO-V1.0"       
+PRODUCT_NAME                       = "INFRARED FLUXES"                        
+PRODUCT_ID                         = "FLUXES_TAB"                             
+INSTRUMENT_HOST_ID                 = {"KECK1", "OBS056T6", "OBS376T3"}        
+INSTRUMENT_HOST_NAME               = {"EUROPEAN SOUTHERN OBSERVATORY 3.6-M    
+        EQUATORIAL CASSEGRAIN/COUDE REFLECTOR", "MAUNA KEA OBSERVATORY 3.2-M  
+        NASA INFRARED CASSEGRAIN EQUAT. REFLECTOR (IRTF)", "W.M. KECK         
+        OBSERVATORY 10-M KECK I RITCHEY-CHRETIEN ALTAZIMUTH REFLECTOR"}       
+INSTRUMENT_ID                      = {"I0069", "I0070", "I0071", "KECK1LWS"}  
+INSTRUMENT_NAME                    = {"JPL MID-INFRARED LARGE-WELL IMAGER",   
+        "KECK I LONG WAVELENGTH SPECTROGRAPH (IR)", "MIRSI - MID-INFRARED     
+        SPECTROMETER AND IMAGER", "THERMAL INFRARED MULTI-MODE INSTRUMENT 2"} 
+TARGET_NAME                        = "ASTEROID"                               
+TARGET_TYPE                        = "ASTEROID"                               
+START_TIME                         = 2000-03-16                               
+STOP_TIME                          = 2003-06-02                               
+PRODUCT_CREATION_TIME              = 2006-09-27  /* File uploaded to OLAF */  
+REFERENCE_KEY_ID                   = "DELBO2004"                              
+                                                                              
+OBJECT                             = TABLE                                    
+ ROWS                              = 317                                      
+ ROW_BYTES                         = 82                                       
+ INTERCHANGE_FORMAT                = "ASCII"                                  
+ COLUMNS                           = 11                                       
+ DESCRIPTION                       = "Thermal infrared fluxes of asteroids    
+        reported in Delbo 2004."                                              
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 1                                        
+  NAME                             = "AST_NUMBER"                             
+  DESCRIPTION                      = "Asteroid number"                        
+  DATA_TYPE                        = "ASCII_INTEGER"                          
+  START_BYTE                       = 1                                        
+  BYTES                            = 6                                        
+  FORMAT                           = "I6"                                     
+  MISSING_CONSTANT                 = 0                                        
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 2                                        
+  NAME                             = "AST_NAME"                               
+  DESCRIPTION                      = "Asteroid name"                          
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 8                                        
+  BYTES                            = 17                                       
+  FORMAT                           = "A17"                                    
+  MISSING_CONSTANT                 = "-"                                      
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 3                                        
+  NAME                             = "PROV_DESIG"                             
+  DESCRIPTION                      = "Provisional designation of the asteroid"
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 26                                       
+  BYTES                            = 10                                       
+  FORMAT                           = "A10"                                    
+  MISSING_CONSTANT                 = "-"                                      
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 4                                        
+  NAME                             = "OBS_START_TIME"                         
+  DESCRIPTION                      = "UTC time at start of observation"       
+  DATA_TYPE                        = "TIME"                                   
+  START_BYTE                       = 37                                       
+  BYTES                            = 19                                       
+  FORMAT                           = "A19"                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 5                                        
+  NAME                             = "WAVELENGTH"                             
+  DESCRIPTION                      = "Central wavelength of observation in    
+        microns"                                                              
+  UNIT                             = "MICRON"                                 
+  DATA_TYPE                        = "ASCII_REAL"                             
+  START_BYTE                       = 57                                       
+  BYTES                            = 5                                        
+  FORMAT                           = "F5.2"                                   
+  MISSING_CONSTANT                 = -9.99                                    
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 6                                        
+  NAME                             = "FLUX"                                   
+  DESCRIPTION                      = "Observed flux"                          
+  UNIT                             = "MILLIJANSKY"                            
+  DATA_TYPE                        = "ASCII_INTEGER"                          
+  START_BYTE                       = 63                                       
+  BYTES                            = 4                                        
+  FORMAT                           = "I4"                                     
+  MISSING_CONSTANT                 = -999                                     
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 7                                        
+  NAME                             = "ERROR_FLUX"                             
+  DESCRIPTION                      = "The error in FLUX"                      
+  UNIT                             = "MILLIJANSKY"                            
+  DATA_TYPE                        = "ASCII_INTEGER"                          
+  START_BYTE                       = 68                                       
+  BYTES                            = 4                                        
+  FORMAT                           = "I4"                                     
+  MISSING_CONSTANT                 = -999                                     
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 8                                        
+  NAME                             = "TELESCOPE_CODE"                         
+  DESCRIPTION                      = "A code specifying the telescope used for
+        the observation:                                                      
+                                                                              
+        K = Keck-1 telescope on Mauna Kea, Hawaii                             
+        E = ESO 3.6m telescope at La Silla, Chile                             
+        I = The NASA Infrared Telescope Facilty (IRTF) on Mauna Kea"          
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 73                                       
+  BYTES                            = 2                                        
+  FORMAT                           = "A2"                                     
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 9                                        
+  NAME                             = "DERIVATION_CODE"                        
+  DESCRIPTION                      = "A code indicating whether the fluxes    
+        have been derived from filter photometry (P) or from spectroscopic    
+        observations (S)"                                                     
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 76                                       
+  BYTES                            = 1                                        
+  FORMAT                           = "A1"                                     
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 10                                       
+  NAME                             = "INSTRUMENT_CODE"                        
+  DESCRIPTION                      = "A code indicating the instrument used   
+        for the observations:                                                 
+                                                                              
+        I = MIRLIN (Mid-InfraRed Large-well Imager)                           
+        T = TIMMI2 (Thermal Infrared Multimode Instrument)                    
+        L = LWS (Long Wavelength Spectrograph)                                
+        M = MIRSI (Mid-IR Spectrometer and Imager)"                           
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 78                                       
+  BYTES                            = 1                                        
+  FORMAT                           = "A1"                                     
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+ OBJECT                            = COLUMN                                   
+  COLUMN_NUMBER                    = 11                                       
+  NAME                             = "QUALITY_CODE"                           
+  DESCRIPTION                      = "A code indicating the quality of the    
+        data:                                                                 
+                                                                              
+        G = fluxes taken under good or photometric conditions                 
+        N = fluxes either taken under certainly non-photometric sky conditions
+        or for which problems have been found in the data reduction/analysis" 
+  DATA_TYPE                        = "CHARACTER"                              
+  START_BYTE                       = 80                                       
+  BYTES                            = 1                                        
+  FORMAT                           = "A1"                                     
+ END_OBJECT                        = COLUMN                                   
+                                                                              
+END_OBJECT                         = TABLE                                    
+END                                                                           

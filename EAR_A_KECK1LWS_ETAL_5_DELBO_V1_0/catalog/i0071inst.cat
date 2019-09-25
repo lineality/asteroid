@@ -1,0 +1,38 @@
+PDS_VERSION_ID                     = PDS3                                     
+RECORD_TYPE                        = "FIXED_LENGTH"                           
+LABEL_REVISION_NOTE                = "2006-03-20: Information loaded into OLAF
+        by Carol Neese"                                                       
+                                                                              
+OBJECT                             = INSTRUMENT                               
+ INSTRUMENT_ID                     = "I0071"                                  
+ INSTRUMENT_HOST_ID                = "OBS376T3"                               
+                                                                              
+ OBJECT                            = INSTRUMENT_INFORMATION                   
+  INSTRUMENT_NAME                  = "MIRSI - MID-INFRARED SPECTROMETER AND   
+        IMAGER"                                                               
+  INSTRUMENT_TYPE                  = "INFRARED IMAGER"                        
+  INSTRUMENT_DESC                  = "                                        
+                                                                              
+                                                                              
+  Instrument Overview                                                         
+  ===================                                                         
+    MIRSI is a mid-infrared camera system with both spectroscopic and         
+    imaging capabilities.                                                     
+                                                                              
+    Spectral Range:  2 - 28 microns                                           
+    Pixel Scale (at IRTF) (diffraction-limited): 0.27 arcsec/pixel            
+    Field of View (at IRTF):  85 x 64 arcsec                                  
+    Spectral Resolution (spectroscopic mode): 200 at 10 microns               
+                                              100 at 20 microns               
+    Nominal point source sensitivity for                                      
+      1-sigma detection in 60 sec. integration:  20 mJy at 10 microns         
+                                                100 mJy at 20 microns         
+    Optics:  Reflective"                                                      
+ END_OBJECT                        = INSTRUMENT_INFORMATION                   
+                                                                              
+ OBJECT                            = INSTRUMENT_REFERENCE_INFO                
+  REFERENCE_KEY_ID                 = "DEUTCHETAL2002"                         
+ END_OBJECT                        = INSTRUMENT_REFERENCE_INFO                
+                                                                              
+END_OBJECT                         = INSTRUMENT                               
+END                                                                           

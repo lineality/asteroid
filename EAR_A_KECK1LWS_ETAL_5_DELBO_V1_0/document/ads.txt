@@ -1,0 +1,8 @@
+%R 2006PDSS...52D
+%A Delbo, M.
+%T Delbo Thermal Infrared Asteroid Diameters and Albedos V1.0
+%D 09/2006
+%J NASA Planetary Data System, EAR-A-KECK1LWS/ETAL-5-DELBO-V1.0
+%U http://pdsquery.jpl.nasa.gov/query?Identifier=EAR-A-KECK1LWS/ETAL-5-DELBO-V1.0&resclass=data.dataset
+%B This data set contains radiometric albedos and diameters for Near Earth Asteroids (NEAs) derived by three different thermal models and reported in Delbo (2004) [DELBO2004].  The observed infrared fluxes on which the derivations were based are also included.
+

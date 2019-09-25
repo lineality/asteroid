@@ -1,0 +1,47 @@
+PDS_VERSION_ID                     = PDS3                                     
+RECORD_TYPE                        = FIXED_LENGTH                             
+                                                                              
+OBJECT                             = TEXT                                     
+   PUBLICATION_DATE                = 2006-09-27  /*Label Generated*/          
+   NOTE                            = "Description of the contents of the      
+        catalog directory."                                                   
+END_OBJECT                         = TEXT                                     
+END                                                                           
+                                                                              
+                                                                              
+This directory contains the PDS catalog files for this data set. Instrument   
+host file names end in "host.cat". Instrument file names in "inst.cat".       
+Target files are located in the TARGET sub-directory.                         
+                                                                              
+                   catalog Directory Contents                                 
+                                                                              
+catinfo.txt - The file you are reading.                                       
+                                                                              
+dataset.cat - The catalog file for the data set "Delbo Thermal Infrared       
+        Asteroid Diameters and Albedos V1.0".                                 
+                                                                              
+i0070inst.cat - The catalog file for the instrument "JPL Mid-InfraRed         
+        Large-well Imager".                                                   
+                                                                              
+keck1lwsinst.cat - The catalog file for the instrument "Keck I Long Wavelength
+        Spectrograph (IR)".                                                   
+                                                                              
+i0071inst.cat - The catalog file for the instrument "MIRSI - Mid-Infrared     
+        Spectrometer and Imager".                                             
+                                                                              
+i0069inst.cat - The catalog file for the instrument "Thermal Infrared         
+        Multi-Mode Instrument 2".                                             
+                                                                              
+mission.cat - The catalog file for the mission "Support Archives".            
+                                                                              
+obs056t6host.cat - The catalog file for the instrument host "European Southern
+        Observatory 3.6-m equatorial Cassegrain/Coude reflector".             
+                                                                              
+keck1host.cat - The catalog file for the instrument host "W.M. Keck           
+        Observatory 10-m Keck I Ritchey-Chretien altazimuth reflector".       
+                                                                              
+obs376t3host.cat - The catalog file for the instrument host "Mauna Kea        
+        Observatory 3.2-m NASA infrared Cassegrain equat. reflector (IRTF)".  
+                                                                              
+ref.cat - A listing of all publications referenced in the data set.  This is  
+        analogous to a bibliography for the data set.                         
